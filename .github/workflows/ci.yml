@@ -1,0 +1,23 @@
+name: PR
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-commit-message:
+    name: Check Commit Message
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Proofread commit types
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: '^((:art:|:racehorse:|:non-potable_water:|:memo:|:penguin:|:apple:|:checkered_flag:|:bug:|:fire:|:green_heart:|:white_check_mark:|:lock:|:arrow_up:|:arrow_down:|:shirt:) )?(feat|fix|docs|style|refactor|test|chore).+'
+          error: 'Commit messages must begin with a valid commit type.'
+          excludeDescription: 'true'
+          excludeTitle: 'true'
+          checkAllCommitMessages: 'true'
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
