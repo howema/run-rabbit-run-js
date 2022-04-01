@@ -1,0 +1,119 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+    /* width: 90%; */
+    box-sizing: border-box;
+    max-width: 70%;
+    margin: 2rem auto;
+}
+
+.grid {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(3, 1fr 50px); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-gap: 1rem;
+}
+
+.grid__toolbar {
+    display: flex;
+    border: 2px solid deeppink;
+    justify-content: center;
+    
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+}
+
+.grid__toolbar-add {
+   padding: 1rem 4.5rem 0 2rem;
+}
+
+.grid__toolbar-filter {
+   padding: 1rem 2rem 1rem 4.5rem;
+} 
+
+.note {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+    
+    /* display: flex;
+    flex-direction: column; */
+
+    /* grid-row-start: 1;
+   grid-column-start: 2;
+   grid-row-end: 3;
+   grid-column-end: 3; */
+   /* display: flex; */
+   /* justify-content: center; */
+   /* position: relative; */
+}
+
+
+
+/* Dry this up */
+
+.note__flippant {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__grandmahowe {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__grapes {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__dino {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__grocery {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__feedback {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.note__eerie {
+    padding: 0.5rem;
+    border: 2px solid black;
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
