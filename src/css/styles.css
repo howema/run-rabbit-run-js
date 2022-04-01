@@ -1,9 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Share Tech Mono', monospace;
     /* width: 90%; */
     box-sizing: border-box;
     max-width: 70%;
     margin: 2rem auto;
+
+    background: #CEAEBA;
+    background: -webkit-linear-gradient(bottom, #CEAEBA, #B1B3F1);
+    background: -moz-linear-gradient(bottom, #CEAEBA, #B1B3F1);
+    background: linear-gradient(to top, #CEAEBA, #B1B3F1);
 }
 
 .grid {
@@ -17,9 +26,16 @@ body {
     grid-gap: 1rem;
 }
 
+.all_notes {
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
 .grid__toolbar {
     display: flex;
-    border: 2px solid deeppink;
+    border: 2px solid #1034A6;
     justify-content: center;
     
     grid-row-start: 1;
@@ -42,9 +58,6 @@ body {
     list-style: none;
     text-align: center;
     font-size: 1rem;
-    
-    /* display: flex;
-    flex-direction: column; */
 
     /* grid-row-start: 1;
    grid-column-start: 2;
@@ -91,12 +104,14 @@ body {
     font-size: 1rem;
 }
 
-.note__grocery {
+.note__oatmeal {
     padding: 0.5rem;
     border: 2px solid black;
     list-style: none;
     text-align: center;
     font-size: 1rem;
+    /* display: flex; */
+    /* vertical-align: center; */
 }
 
 .note__feedback {
