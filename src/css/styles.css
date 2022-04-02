@@ -15,14 +15,13 @@ body {
     background: linear-gradient(to top, #CEAEBA, #B1B3F1);
 }
 
+/* parent */
 .grid {
     width: 90%;
     margin: 2rem auto;
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: repeat(3, 1fr 50px); */
-    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     grid-gap: 1rem;
 }
 
@@ -33,15 +32,17 @@ body {
     justify-content: center;
 }
 
+/* child */
 .grid__toolbar {
     display: flex;
     border: 2px solid #1034A6;
     justify-content: center;
     
-    grid-row-start: 1;
     grid-column-start: 1;
-    grid-row-end: 1;
+    grid-row-start: 1;
+    
     grid-column-end: 4;
+    grid-row-end: 1;
 }
 
 .grid__toolbar-add {
@@ -58,14 +59,6 @@ body {
     list-style: none;
     text-align: center;
     font-size: 1rem;
-
-    /* grid-row-start: 1;
-   grid-column-start: 2;
-   grid-row-end: 3;
-   grid-column-end: 3; */
-   /* display: flex; */
-   /* justify-content: center; */
-   /* position: relative; */
 }
 
 
@@ -86,6 +79,13 @@ body {
     list-style: none;
     text-align: center;
     font-size: 1rem;
+
+        
+    grid-column-start: 2;
+    grid-row-start: 4;
+    
+    grid-column-end: 2;
+    grid-row-end: 5;
 }
 
 .note__grapes {
