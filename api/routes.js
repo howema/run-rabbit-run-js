@@ -1,16 +1,19 @@
 
-// const Hapi = require('@hapi/hapi'); //go into library
+const Hapi = require('@hapi/hapi');
+const Vision = require('@hapi/vision');
 
 const init = async () => {
 
     const server = Hapi.server({
-        port: 3000,
+        port: 8081,
         host: 'localhost'
     });
 
+await server.register(Vision);
+
     server.route({
         method: 'GET',
-        path: '/',
+        path: '/hello',
         handler: (request, h) => {
 
             return 'Hello you';
