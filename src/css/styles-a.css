@@ -50,8 +50,7 @@ body {
 .to-do li,
 .quotes li,
 .thoughts li,
-.work li,
-.writing li {    /*surrounding box got smaller here*/
+.work li {    /*surrounding box got smaller here*/
     color: blueviolet;
     padding: 0.5rem;
     border: 2px solid black;
