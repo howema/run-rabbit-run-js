@@ -2,20 +2,22 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: { main: './src/js/index.js', styles: './src/css/styles.css' },
   output: {
-    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
+    static: {
+      directory: path.resolve(__dirname, './dist'),
+      publicPath: '/',
+    },
     hot: true,
   },
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.s[ac]ss|css$/i,
         use: [
           'style-loader',
           'css-loader',
@@ -26,7 +28,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: './src/html/notes.html',
+      filename: "notes.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/create.html',
+      filename: "create.html"
+    }),
+    new HtmlWebpackPlugin({
       template: './src/html/index.html',
+      filename: "index.html"
     }),
   ],
   resolve: {
