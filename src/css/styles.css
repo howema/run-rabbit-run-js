@@ -52,7 +52,7 @@ body {
 .thoughts li,
 .work li,
 .writing li {    /*surrounding box got smaller here*/
-    color: blueviolet;
+    color: black;
     padding: 0.5rem;
     border: 2px solid black;
     list-style: none;
