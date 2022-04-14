@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
+    <script asyn defer src="../js/noteGrab.js"></script>
 </head>
 
 <body>
     <header class="title">
         <h1>All Notes</h1>
     </header>
+    <input type="button" onclick="myFunction();" name="okay" value="Click"></input>
     <div class="all_notes">
         <article class="grid">
             <div class="grid__toolbar">
@@ -22,7 +24,7 @@
                 <h3 class="grid__toolbar-filter"><a href="http://localhost:8080/tags/">Filter by Tag</a></h3>
             </div>
             <div class="quotes">
-                <li>quotes</li>
+                <li>quote</li>
             </div>
             <div class="quotes">
                 <li>quotes</li>
@@ -68,6 +70,13 @@
             </div>
         </article>
     </div>
+
 </body>
 
 </html>
+
+<script>
+    function myFunction() {
+        return "hiiiii";
+    }
+</script>

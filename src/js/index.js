@@ -1,3 +1,5 @@
-import '@/scss/base.scss';
+import something, { notes as myNotesAwesomeBrain } from  './notes';
 
-console.log('test');
+
+console.log(myNotesAwesomeBrain());
+console.log(something());

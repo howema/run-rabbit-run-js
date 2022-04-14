@@ -1,5 +1,7 @@
-// import 'src/css/styles.css';
+import notesList from "../../api/notes.json"
 
-console.log('stuff');
+export function notes() {
+    return notesList;
+}
 
-
+export default()=>"some strang doesnt matter";
