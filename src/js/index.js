@@ -1,5 +1,5 @@
-import something, { notes as myNotesAwesomeBrain } from  './notes';
+import { notes } from  './notes';
+// import { noteGrab } from  './notes';
 
-
-console.log(myNotesAwesomeBrain());
-console.log(something());
+console.log(notes());
+// console.log(noteGrab());

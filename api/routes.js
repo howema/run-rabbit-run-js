@@ -5,7 +5,7 @@ const Vision = require('@hapi/vision');
 const init = async () => {
 
     const server = Hapi.server({
-        port: 8081,
+        port: 8080,
         host: 'localhost'
     });
 
@@ -19,6 +19,17 @@ await server.register(Vision);
             return 'Hello you';
         }
     });
+
+    server.route({
+    method: 'GET',
+    path: '/notes.html',
+    options: {
+      cors: {
+        origin: ['*'],
+      },
+    },
+    handler: (request) => getNotes(request.params.noteId),
+  });
 
     await server.start();
     console.log('Server running on %s', server.info.uri);
