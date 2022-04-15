@@ -1,2 +1,5 @@
-// import noteList from './notes.json';
+import notesList from "./notes.json";
 
+const getNotes = (jokeId) => {notesList[jokeId]};
+
+export default getNotes;

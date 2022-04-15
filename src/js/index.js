@@ -1,3 +1,5 @@
-import '@/scss/base.scss';
+import { notes } from  './notes';
+// import { noteGrab } from  './notes';
 
-console.log('test');
+console.log(notes());
+// console.log(noteGrab());
