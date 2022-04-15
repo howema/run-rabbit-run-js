@@ -21,6 +21,15 @@ await server.register(Vision);
     });
 
     server.route({
+        method: 'GET',
+        path: '/notes.json',
+        handler: (request, h) => {
+
+            return 'Hello you';
+        }
+    });
+
+    server.route({
     method: 'GET',
     path: '/notes.html',
     options: {

@@ -12,7 +12,7 @@ body {
     display: block;
     text-align: left;
     padding: 0;
-    margin: 2rem;
+    margin: 3rem 14rem 1rem 4rem;
 }
 
 .grid {
@@ -23,7 +23,7 @@ body {
     grid-gap: 1rem;
 }
 
-.all_notes {
+allNotes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
 
 .grid__toolbar {
     display: flex;
-    border: 1px solid #C19A9A;
+    /* border: 1px solid #C19A9A; */
     justify-content: center;
     
     grid-column-start: 1;
@@ -71,7 +71,7 @@ body {
 .writing li {    /*surrounding box got smaller here*/
     color: navy;
     padding: 0.5rem;
-    border: 2px solid #54A6C9;
+    /* border: 2px solid #54A6C9; */
     list-style: none;
     text-align: center;
     font-size: 1rem;
@@ -83,9 +83,9 @@ li {
     background-image:
     linear-gradient(
       to bottom,
-      hsla(202, 77.8%, 55.9%, 0.2),
+      hsla(202, 77.8%, 55.9%, 0.4),
       transparent,
-      hsla(202, 77.6%, 28%, 0.4)
+      hsla(202, 77.6%, 28%, 0.6)
     );
 }
 
@@ -102,12 +102,12 @@ li:focus {
 }
 
 .grid__toolbar-add {
-    /* display: flex; */
     align-self: left;
     position: relative;
     display: inline-block;
     padding: 0.5rem;
     margin: 2rem 18rem 2rem 0;
+    padding: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -122,34 +122,43 @@ li:focus {
 
  @keyframes grow-n-change {
             0% {
-                transform: scale(1.25);
+                /* transform: scale(1.5); */
                 background-color: hsla(2, 24%, 56%, 0.1);
-                border-radius: 27%;
-                padding: 1rem;
+                border-radius: 16%;
+                padding: 1.5rem;
             }
    
             25% {
+                /* transform: scale(1.5); */
                 background-color:hsla(2, 24%, 56%, 0.2);
-                border-radius: 27%;
+                border-radius: 16%;
+                padding: 1.5rem;
+
             }
   
             50% {
+                /* transform: scale(1.5); */
                 background-color: hsla(2, 24%, 56%, 0.3);
-                border-radius: 25%;
+                border-radius: 16%;
+                padding: 1.5rem;
+
 /*                 padding: 0.25rem; */
             }
    
   
             75% {
+                /* transform: scale(1.5); */
                 background-color: hsla(202, 77.8%, 55.9%, 0.2);
                 border-radius: 16%;
+                padding: 1.5rem;
 /*                 padding: 0.5rem; */
             }
    
             100% {
-                transform: scale(1.5);
+                /* transform: scale(1.25); */
+                /* transform: scale(1.5); */
                 background-color: hsla(202, 77.8%, 55.9%, 0.4);
                 border-radius: 16%;
-                padding: 0.75rem;
+                padding: 1.5rem;
             }
         }

@@ -15,14 +15,15 @@
     <header class="title">
         <h1>All Notes</h1>
     </header>
-    <div class="all_notes">
+    <div id="allNotes">
         <article class="grid">
             <div class="grid__toolbar">
                 <h3 class="grid__toolbar-add"><a href="http://localhost:8080/create.html/">Add Note</a></h3>
                 <h3 class="grid__toolbar-filter"><a href="http://localhost:8080/tags.html/">Filter by Tag</a></h3>
             </div>
             <div class="quotes">
-                <li>quote</li>
+                <!-- <li class="first-quote">quote111</li> -->
+                <li>quote1</li>
             </div>
             <div class="quotes">
                 <li>quotes</li>
@@ -74,7 +75,5 @@
 </html>
 
 <script>
-    function myFunction() {
-        return "hiiiii";
-    }
+    let li = document.body.firstChild;
 </script>

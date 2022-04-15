@@ -1,20 +1,14 @@
 import notesList from "../../api/notes.json"
 
-export function notes() {
-    return notesList;
-}
+// export function notes() {
+//     return notesList[1].note;
+// }
 
-// export default()=>"some strang doesnt matter";
-
-// export const noteGrab = async (noteId) => {
-//   try {
-//     const result = await fetch(`http://localhost:8080/notes.html`);
-//     const note = await result.json();
-//     return note;
-//   } catch (err) {
-//     return {
-//         note: 'cant find your note, sorry',
-//     };
-//   }
-// };
-
+        
+        export function notes() {
+            let newArray = [];
+            for (let i = 0; i < notesList.length; i++) {
+            newArray.push(notesList[i].note);
+        }
+        return newArray;
+        }
