@@ -36,14 +36,6 @@ module.exports = {
       filename: "create.html"
     }),
     new HtmlWebpackPlugin({
-      template: './api/notes.json',
-      filename: "tags.html"
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/html/tags.html',
-      filename: "notes.json"
-    }),
-    new HtmlWebpackPlugin({
       template: './src/html/index.html',
       filename: "index.html"
     }),
