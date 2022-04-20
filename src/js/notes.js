@@ -7,7 +7,7 @@ export function notes() {
         
         let note = document.createElement("div");
         note.className = "quotes";
-        note.classList.add("quotes"); //.place, .toggle
+        note.classList.add("quotes");
     
         let noteLi = document.createElement("li");
             
