@@ -96,14 +96,14 @@ li:focus {
 }
 
 .grid__toolbar-filter {
-    position: absolute;
+    /* position: absolute; */
     align-self: center;
     right: 27%;
 }
 
 .grid__toolbar-add {
     align-self: left;
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     padding: 0.5rem;
     margin: 2rem 18rem 2rem 0;
