@@ -23,11 +23,11 @@ body {
     grid-gap: 1rem;
 }
 
-allNotes {
+/* .allNotes {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .grid__toolbar {
     display: flex;
@@ -62,13 +62,14 @@ allNotes {
    padding: 1rem 2rem 1rem 4.5rem;
 } 
 
-
+/* not sure these still apply after removing hardcoded in notes.html */
 .note li,
 .to-do li,
 .quotes li,
 .thoughts li,
 .work li,
-.writing li {    /*surrounding box got smaller here*/
+.writing li,
+.tags li {    /*surrounding box got smaller here*/
     color: navy;
     padding: 0.5rem;
     /* border: 2px solid #54A6C9; */

@@ -12,7 +12,7 @@ module.exports = {
       directory: path.resolve(__dirname, './dist'),
       publicPath: '/',
     },
-    hot: true,
+    // hot: true,
   },
   module: {
     rules: [
@@ -32,12 +32,24 @@ module.exports = {
       filename: "notes.html"
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/create.html',
-      filename: "create.html"
+      template: './src/html/notes-of-tag.html',
+      filename: "notes-of-tag.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/tags.html',
+      filename: "tags.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/show.html',
+      filename: "show.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/html/index.html',
       filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/create.html',
+      filename: "create.html"
     }),
   ],
   resolve: {

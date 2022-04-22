@@ -2,8 +2,8 @@ import notesList from "../../api/notes.json"
 
 export function notes() {
     for (let text in notesList) {
-        console.log(notesList[text].note);
         let noteText = document.createTextNode(notesList[text].note);
+        console.log(noteText.wholeText);
         
         let note = document.createElement("div");
         note.className = "quotes";
