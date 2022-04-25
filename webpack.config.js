@@ -28,8 +28,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/html/notes.html',
-      filename: "notes.html"
+      template: './src/html/notesAll.html',
+      filename: "notesAll.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/html/filterByTag.html',
