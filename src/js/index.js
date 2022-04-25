@@ -4,4 +4,4 @@ import { bePicky } from  './notes-of-tag';
 
 // notes();
 // tags();
-bePicky();
+bePicky("Work");

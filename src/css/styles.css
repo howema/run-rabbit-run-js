@@ -63,13 +63,13 @@ body {
 } 
 
 /* not sure these still apply after removing hardcoded in notes.html */
-.note li,
-.to-do li,
-.quotes li,
-.thoughts li,
-.work li,
-.writing li,
-.tags li {    /*surrounding box got smaller here*/
+.note p,
+.to-do p,
+.quotes p,
+.thoughts p,
+.work p,
+.writing p,
+.tags p {    /*surrounding box got smaller here*/
     color: navy;
     padding: 0.5rem;
     /* border: 2px solid #54A6C9; */
@@ -78,7 +78,7 @@ body {
     font-size: 1rem;
 }
 
-li {
+.noteP {
     background: #A2CFE2;
     transition: background-color 250ms ease;
     background-image:
@@ -90,8 +90,8 @@ li {
     );
 }
 
-li:hover,
-li:focus {
+p:hover,
+p:focus {
     background-color: #54A6C9;
 
 }

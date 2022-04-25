@@ -11,13 +11,13 @@ export function createNoteBlock(text, notesList) {
         console.log(noteText.wholeText);
         
         let note = document.createElement("div");
-        note.className = "quotes";
         note.classList.add("quotes");
     
-        let noteLi = document.createElement("li");
+        let noteP = document.createElement("p");
+        noteP.classList.add("noteP");
             
-        note.appendChild(noteLi);
-        noteLi.appendChild(noteText)
+        note.appendChild(noteP);
+        noteP.appendChild(noteText);
     
         const notesContainer = document.getElementById("notes-container");
         notesContainer.appendChild(note);

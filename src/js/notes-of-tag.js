@@ -1,9 +1,9 @@
 import notesList from "../../api/notes.json"
 import { createNoteBlock } from "./notes"
 
-export function bePicky() {
+export function bePicky(whichTag) {
     for (let text in notesList) {
-            if (notesList[text].tag === "Work") {
+            if (notesList[text].tag === whichTag) {
                 createNoteBlock(text, notesList)
             }
     }
