@@ -32,8 +32,8 @@ module.exports = {
       filename: "notes.html"
     }),
     new HtmlWebpackPlugin({
-      template: './src/html/notes-of-tag.html',
-      filename: "notes-of-tag.html"
+      template: './src/html/filterByTag.html',
+      filename: "filterByTag.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/html/tags.html',
