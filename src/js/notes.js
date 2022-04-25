@@ -2,6 +2,11 @@ import notesList from "../../api/notes.json"
 
 export function notes() {
     for (let text in notesList) {
+        createNoteBlock(text, notesList);
+    }
+}
+
+export function createNoteBlock(text, notesList) {
         let noteText = document.createTextNode(notesList[text].note);
         console.log(noteText.wholeText);
         
@@ -16,5 +21,4 @@ export function notes() {
     
         const notesContainer = document.getElementById("notes-container");
         notesContainer.appendChild(note);
-    }
 }

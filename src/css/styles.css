@@ -107,7 +107,7 @@ li:focus {
     /* position: relative; */
     display: inline-block;
     padding: 0.5rem;
-    margin: 2rem 18rem 2rem 0;
+    margin: auto;
     padding: 1rem;
 }
 
