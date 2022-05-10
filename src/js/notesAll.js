@@ -6,3 +6,5 @@ export function notesAll() {
         createNoteBlock(text, notesList);
     }
 }
+
+notesAll();

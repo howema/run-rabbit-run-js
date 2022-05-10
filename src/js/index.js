@@ -1,7 +1,7 @@
-import { notesAll } from  './notesAll';
+// import { notesAll } from  './notesAll';
 // import { tags } from  './tags';
 // import { filterByTag } from  './filterByTag';
 
-notesAll();
+// notesAll();
 // tags();
 // filterByTag("Work");

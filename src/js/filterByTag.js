@@ -8,3 +8,5 @@ export function filterByTag(whichTag) {
             }
     }
 }
+
+filterByTag("Work");

@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: { main: './src/js/index.js', styles: './src/css/styles.css' },
+  entry: { main: './src/js', filterByTag: "./src/js/filterByTag.js", styles: './src/css/styles.css', notesAll: "./src/js/notesAll.js"},
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
@@ -29,11 +29,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/html/notesAll.html',
-      filename: "notesAll.html"
+      filename: "notesAll.html",
+      chunks: ["notesAll", "styles"],
     }),
     new HtmlWebpackPlugin({
       template: './src/html/filterByTag.html',
-      filename: "filterByTag.html"
+      filename: "filterByTag.html", 
+      chunks: ["filterByTag", "styles"],
+     
     }),
     new HtmlWebpackPlugin({
       template: './src/html/tags.html',
